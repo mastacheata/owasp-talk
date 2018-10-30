@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>WebDev Security Best Practices</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +24,65 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown>
+                    <textarea data-template>
+					    ## Web Security Best Practices
+                    </textarea>
+				</section>
+                <section data-markdown>
+                    <textarea data-template>
+                        ### Why?
+
+                        ![Lone hacker Rasputin breaches 60 universities, federal agencies ZDNet](lib/img/Screenshot_2018-10-30 Lone hacker Rasputin breaches 60 universities, federal agencies ZDNet.png)
+                        ![Telekom-Störung Der seltsame Ausfall von 900 000 Routern](lib/img/Screenshot_2018-10-30 Telekom-Störung Der seltsame Ausfall von 900 000 Routern.png)
+						![‘High Risk’ Zero-Day Leaves 200,000 Magento Merchants Vulnerable](lib/img/Screenshot_2018-10-30 ‘High Risk’ Zero-Day Leaves 200,000 Magento Merchants Vulnerable.png)
+                    </textarea>
+                </section>
+				<section>
+                    <section data-markdown="">
+				        <textarea data-template>
+                            ### What?
+
+                            #### The Ten Most Critical Web Application Security Risks
+                            ![OWASP Wasp Mascot](lib/img/OWASP-wasp.png)
+				        </textarea>
+                        <aside class="notes">
+                            OWASP = Open Web Application Security Project
+                            OWASP ähnlich GNU, Linux etc.,
+                            Open Source, loser Zusammenschluss von Menschen
+                            Security Firmen und Professionals
+                            Entwickeln allerhand Sicherheitskram mit Fokus auf Web
+                        </aside>
+                    </section>
+                    <section data-markdown="">
+                        <textarea data-template>
+                            ### OWASP Top 10 - 2017 (1-5)
+
+                            ![OWASP Top10 1-5](lib/img/OWASP-Top10-1.png)
+                            <aside class="notes">
+                                Injection - SQL, Reflection XSS, Code Injection<br />
+                                Broken Auth - Kaputte Passworte, Sesssion Tokens etc.<br />
+                                SDE - DSGVO lässt grüßen<br />
+                                XXE - Hauptsächlich SOAP und SAML, ähnliches evtl. via GraphQL/JSON möglich<br />
+                                Broken Access - Zugriff auf Fremde Daten, Admin für Gäste etc.
+                            </aside>
+                        </textarea>
+                    </section>
+                    <section data-markdown="">
+                        <textarea data-template>
+                            ### OWASP Top 10 - 2017 (6-10)
+
+                            ![OWASP Top10 6-10](lib/img/OWASP-Top10-2.png)
+                        </textarea>
+                        <aside class="notes">
+                            Misconfiguration - default configs, open cloud storage, verbose errors including credentials<br />
+                            XSS - Session Hijacking, Cookies auslesen, *coins minen<br />
+                            Insecure Deserialization - JSON mit eval() :P<br />
+                            Known Vulnerabilities - Selbsterklärend<br />
+                            Insufficient Logging - Nach dem Angriff, bleibt Angreifer für durchschnittlich 200 Tage unbemerkt
+                        </aside>
+                    </section>
+				</section>
 			</div>
 		</div>
 
@@ -37,12 +94,20 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+                allottedTime: 60 * 60 * 1000, // 90 minutes
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/elapsed-time-bar/elapsed-time-bar.js'},
+				],
+                keyboard: {
+                    // pause/resume time when Enter is pressed
+                    13: () => {
+                        ElapsedTimeBar.isPaused ? ElapsedTimeBar.resume() : ElapsedTimeBar.pause();
+                    },
+                },
 			});
 		</script>
 	</body>
