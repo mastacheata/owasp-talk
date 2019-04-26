@@ -26,21 +26,21 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <!-- <textarea data-template data-separator-notes="^:::Notes:::"> -->
+                    <!-- <textarea data-template data-separator-notes="^Notes:"> -->
                         <h2>Web Security mit dem OWASP ASVS</h1>
 
                         <footer style="width: 100%; text-align: center; font-size: small; margin-top: 10em;">Kolloquium zur Masterarbeit "Untersuchung einer Webanwendung nach dem OWASP Application Security Verification Standard" von Benedikt Bauer</footer>
                     <!-- </textarea> -->
                 </section>
                 <section data-markdown>
-                    <textarea data-template data-separator-notes="^:::Notes:::">
+                    <textarea data-template data-separator-notes="^Notes:">
                         ### Warum?
                         #### (Motivation)
                     </textarea>
                 </section>
                 <section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
+                        <textarea data-template data-separator-notes="^Notes:">
                             ### Gesetzliche Verpflichtung zu IT-Sicherheit
 
                             ![IT-Sicherheitsgesetz (bz)](lib/img/berlinerzeitung-it-sicherheitsgesetz.png)
@@ -48,48 +48,48 @@
                         </textarea>
                     </section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
-                            ![Lone hacker Rasputin breaches 60 universities, federal agencies ZDNet](lib/img/Screenshot_2018-10-30 Lone hacker Rasputin breaches 60 universities, federal agencies ZDNet.png)
-                            ![Telekom-Störung Der seltsame Ausfall von 900 000 Routern](lib/img/Screenshot_2018-10-30 Telekom-Störung Der seltsame Ausfall von 900 000 Routern.png)
-                            ![‘High Risk’ Zero-Day Leaves 200,000 Magento Merchants Vulnerable](lib/img/Screenshot_2018-10-30 ‘High Risk’ Zero-Day Leaves 200,000 Magento Merchants Vulnerable.png)
+                        <textarea data-template data-separator-notes="^Notes:">
+                            ![Lone hacker Rasputin breaches 60 universities, federal agencies ZDNet](lib/img/Screenshot_2018-10-30%20Lone%20hacker%20Rasputin%20breaches%2060%20universities,%20federal%20agencies%20ZDNet.png)
+                            ![Telekom-Störung Der seltsame Ausfall von 900 000 Routern](lib/img/Screenshot_2018-10-30%20Telekom-Störung%20Der%20seltsame%20Ausfall%20von%20900%20000%20Routern.png)
+                            ![‘High Risk’ Zero-Day Leaves 200,000 Magento Merchants Vulnerable](lib/img/Screenshot_2018-10-30%20‘High%20Risk’%20Zero-Day%20Leaves%20200,000%20Magento%20Merchants%20Vulnerable.png)
                         </textarea>
                     </section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
+                        <textarea data-template data-separator-notes="^Notes:">
                             ### Wie konnte das passieren?
 
                             ####  OWASP Top 10 Sicherheitsrisiken
                             ![OWASP Wasp Mascot](lib/img/OWASP-wasp.png)
                             
-                            :::Notes:::
-                                OWASP = Open Web Application Security Project
-                                OWASP ähnlich GNU, Linux etc.,
-                                Open Source, loser Zusammenschluss von Menschen
-                                Security Firmen und Professionals
-                                Entwickeln allerhand Sicherheitskram mit Fokus auf Web
+                            Notes:
+                            - OWASP = Open Web Application Security Project
+                            - OWASP ähnlich GNU, Linux etc.,
+                            - Open Source, loser Zusammenschluss von Menschen
+                            - Security Firmen und Professionals
+                            - Entwickeln allerhand Sicherheitskram mit Fokus auf Web
                         </textarea>
                     </section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
+                        <textarea data-template data-separator-notes="^Notes:">
                             ### OWASP Top 10 - 2017 (1-5)
 
                             ![OWASP Top10 1-5](lib/img/OWASP-Top10-1.png)
                             
-                            :::Notes:::
-                                Injection - SQL, Reflection XSS, Code Injection  
-                                Broken Auth - Kaputte Passworte, Sesssion Tokens etc.  
-                                SDE - DSGVO lässt grüßen  
-                                XXE - Hauptsächlich SOAP und SAML, ähnliches evtl. via GraphQL/JSON möglich  
-                                Broken Access - Zugriff auf Fremde Daten, Admin für Gäste etc.
+                            Notes:
+                            - Injection - SQL, Reflection XSS, Code Injection  
+                            - Broken Auth - Kaputte Passworte, Sesssion Tokens etc.  
+                            - SDE - DSGVO lässt grüßen  
+                            - XXE - Hauptsächlich SOAP und SAML, ähnliches evtl. via GraphQL/JSON möglich  
+                            - Broken Access - Zugriff auf Fremde Daten, Admin für Gäste etc.
                         </textarea>
                     </section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
+                        <textarea data-template data-separator-notes="^Notes:">
                             ### OWASP Top 10 - 2017 (6-10)
 
                             ![OWASP Top10 6-10](lib/img/OWASP-Top10-2.png)
 
-                            :::Notes:::
+                            Notes:
                                 Misconfiguration - default configs, open cloud storage, verbose errors including credentials  
                                 XSS - Session Hijacking, Cookies auslesen, *coins minen  
                                 Insecure Deserialization - JSON mit eval() :P  
@@ -99,7 +99,7 @@
                     </section>
                 </section>
                 <section data-markdown>
-                    <script type="text/template" data-separator-notes="^:::Notes:::">
+                    <script type="text/template" data-separator-notes="^Notes:">
                         ### Was also tun?
                         #### (Ziele)
   
@@ -107,23 +107,23 @@
                         - Sicherheitslücken schließen <!-- .element: class="fragment" data-fragment-index="2" -->
                         - Neuen Sicherheitsproblemen vorbeugen <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                        :::Notes:::
+                        Notes:
                     </script>
                 </section>
                 <section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
+                        <textarea data-template data-separator-notes="^Notes:">
                             ### Wie können Ziele erreicht werden?
                             #### (Stand der Technik)
 
                             - Sicherheitsstandards
                             - Best practices / Richtlinien für sichere Softwareentwicklung
 
-                            :::Notes:::
+                            Notes:
                         </textarea>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Sicherheitsstandards
         
                             - ISMS nach ISO27000 Reihe
@@ -135,11 +135,11 @@
                             - BSI IT-Grundschutz (Baustein Webanwendungen)
                                 - Viele Vorgaben, aber hauptsächlich Prüfung ob bestimmte Probleme auftreten <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Best practices
         
                             - Django
@@ -152,14 +152,14 @@
                                 - Authentifizierung großes Thema <!-- .element: class="fragment" data-fragment-index="2" -->
                                 - Drittanbieter-Skripte (insb. SSO) <!-- .element: class="fragment" data-fragment-index="2" -->
 
-                            :::Notes:::
-                                - Auch Mozilla und Django verweisen auf die Top10 bzw. Testing Guide von OWASP
-                                - Wieder nur bekannte Probleme abklopfen, wenig auf allgemeine Sicherheitsmaßnahmen geachtet
+                            Notes:
+                            - Auch Mozilla und Django verweisen auf die Top10 bzw. Testing Guide von OWASP
+                            - Wieder nur bekannte Probleme abklopfen, wenig auf allgemeine Sicherheitsmaßnahmen geachtet
                         </script>
                     </section>
                 </section>
                 <section data-markdown>
-                    <script type="text/template" data-separator-notes="^:::Notes:::">
+                    <script type="text/template" data-separator-notes="^Notes:">
                         ### ASVS
                         #### Eingeschlagener Realisierungsweg
                         
@@ -168,12 +168,12 @@
                         - seit September 2018 online <!-- .element: class="fragment" data-fragment-index="3" -->
                         - Quellcode und Testsystem untersucht <!-- .element: class="fragment" data-fragment-index="4" -->
 
-                        :::Notes:::
+                        Notes:
                     </script>
                 </section>
                 <section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Untersuchung
                             #### Anwendungsstruktur
                             
@@ -181,27 +181,29 @@
                             - Django im Backend
                             - ReactJS im Frontend
 
-                            :::Notes:::
-                                - Docker
-                                - Single Page App
-                                - REST-API
-                                - Amazon-Systeme
+                            Notes:
+                            - Docker
+                            - Single Page App
+                            - REST-API
+                            - Amazon-Systeme
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Untersuchung
                             #### Werkzeuge
-                            
+
                             - SSLLabs <!-- .element: class="fragment" data-fragment-index="1" -->
                             - Python Taint (statische Codeanalyse) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Linter (Flake8, ESLint) für CodeQualität <!-- .element: class="fragment" data-fragment-index="3" -->
+
+                            Notes:
                         </script>
                     </section>
                 </section>
                 <section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Überblick
                             
@@ -210,17 +212,15 @@
                             - Abschnitte IoT und Mobil mangels Untersuchungsgegenstand ausgelassen <!-- .element: class="fragment" data-fragment-index="3" -->
                             - Wird gerade aktualisiert (ASVS v4, Release Feb `19) <!-- .element: class="fragment" data-fragment-index="4" -->
 
-                            :::Notes:::
-                                - SSLLabs von Qualsys zeigt Algorithmen und Konfigurationsprobleme
-                                - pyt prüft auf systembefehle und unmaskierte SQL Queries
-                                - Linter prüfen CodeQualität, können aber dadurch auch Fehler finden
-                                - Linter sind nicht auf Sicherheit fokussiert
-
-                            :::Notes:::
+                            Notes:
+                            - SSLLabs von Qualsys zeigt Algorithmen und Konfigurationsprobleme
+                            - pyt prüft auf systembefehle und unmaskierte SQL Queries
+                            - Linter prüfen CodeQualität, können aber dadurch auch Fehler finden
+                            - Linter sind nicht auf Sicherheit fokussiert
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Architektur, Entwurf und Bedrohungsanalyse
                             
@@ -230,13 +230,13 @@
                             - Nach Funktion für Sicherheit oder Geschäftslogik ordnen (L3) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Bedrohungsanalyse nach STRIDE (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
-                                - Structure.md, package.json, requirements.txt
-                                - Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of privilege (STRIDE)
+                            Notes:
+                            - Structure.md, package.json, requirements.txt
+                            - Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of privilege (STRIDE)
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Authentifizierung
                             
@@ -248,13 +248,13 @@
                             - API-Zugänge nicht speichern (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
                             - Zeit für erfolgreiches und fehlgeschlagenes Login identisch (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
-                                - Empto hat Tokens im Klartext gespeichert
-                                - Token IST wie Passwort
+                            Notes:
+                            - Empto hat Tokens im Klartext gespeichert
+                            - Token IST wie Passwort
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Sessionmanagement
                             
@@ -262,14 +262,14 @@
                             - Passwortänderung = Invalidierung (L1) <!-- .element: class="fragment" data-fragment-index="1" -->
                             - Laufzeitbegrenzung (L1) <!-- .element: class="fragment" data-fragment-index="1" -->
 
-                            :::Notes:::
-                                - Empto Tokens waren endlos gültig
-                                - Für mehrere Sessions zuständig
-                                - Nur Abmeldung konnte Token invalidieren
+                            Notes:
+                            - Empto Tokens waren endlos gültig
+                            - Für mehrere Sessions zuständig
+                            - Nur Abmeldung konnte Token invalidieren
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Zugangskontrolle / Berechtigungen
                             
@@ -279,14 +279,14 @@
                             - Parameter für Entscheidungen nicht durch Nutzer beeinflussbar (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Zentraler Mechanismus für Zugangskontrolle (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
-                                - CSRF
-                                - Parameter Manipulation (Alter, Rolle, Firma, etc.)
-                                - Trennung von Zuständigkeiten / minimale Berechtigungen
+                            Notes:
+                            - CSRF
+                            - Parameter Manipulation (Alter, Rolle, Firma, etc.)
+                            - Trennung von Zuständigkeiten / minimale Berechtigungen
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Validierung
                             
@@ -296,15 +296,15 @@
                             - semantische Validierung (L2)  <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Nur eine Validierungsmethode pro Datentyp (L3) <!-- .element: class="fragment" data-fragment-index="5" -->
 
-                            :::Notes:::
-                                - LFI nur für PHP relevant
-                                - XSS usw. durch React bzw. Django ORM
-                                - Protokollieren ist schwer
-                                - Schema Validierung, bspw. JSON-Schema
+                            Notes:
+                            - LFI nur für PHP relevant
+                            - XSS usw. durch React bzw. Django ORM
+                            - Protokollieren ist schwer
+                            - Schema Validierung, bspw. JSON-Schema
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Kryptografie
                             
@@ -314,17 +314,17 @@
                             - Passworte und Schlüssel bei Installation generieren / ersetzen (L2) <!-- .element: class="fragment" data-fragment-index="3" -->
                             - Hardware Sicherheits Modul (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
-                                - Fehlermeldungen = Padding Oracle Problem
-                                - Padding oracle nur für CBC interessant, in TLS 1.2 aber nicht enthalten
-                                - Padding oracle nur bei expliziten Fehlermeldungen
-                                - openSSL hat zertifizierte Version, muss aber explizit installiert werden
-                                - /dev/urandom ausreichend sicher
-                                - HSM nicht vorhanden
+                            Notes:
+                            - Fehlermeldungen = Padding Oracle Problem
+                            - Padding oracle nur für CBC interessant, in TLS 1.2 aber nicht enthalten
+                            - Padding oracle nur bei expliziten Fehlermeldungen
+                            - openSSL hat zertifizierte Version, muss aber explizit installiert werden
+                            - /dev/urandom ausreichend sicher
+                            - HSM nicht vorhanden
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Fehlerbehandlung / Logs
                             
@@ -334,15 +334,15 @@
                             - Zugriff auf Logs beschränken, Datenschutz einhalten (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Kennzeichnung der Quelle für Logeinträge (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
-                                - Fehlermeldungen sehr generisch
-                                - Logs sind auf Sentry
-                                - Quelle (Front- / Backend) wegen Vertrauenswürdigkeit der Logs
-                                - Nicht-Abstreitbarkeit ist problematisch
+                            Notes:
+                            - Fehlermeldungen sehr generisch
+                            - Logs sind auf Sentry
+                            - Quelle (Front- / Backend) wegen Vertrauenswürdigkeit der Logs
+                            - Nicht-Abstreitbarkeit ist problematisch
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Datenschutz
                             
@@ -353,15 +353,15 @@
                             - Sensible Datentypen erfassen und Zugriff darauf einschränken (L2) <!-- .element: class="fragment" data-fragment-index="3" -->
                             - Vorhaltefristen (L3) <!-- .element: class="fragment" data-fragment-index="4" -->
 
-                            :::Notes:::
-                                - No-Cache Header
-                                - Datensparsamkeit eher umgekehrt bei empto
-                                - Zugriff wird nicht protokolliert (Access Logs) - BDSG/DSGVO verlangt das aber auch nicht
-                                - Vorhaltefrist wird nicht geprüft, Datenlöschung geht nur händisch
+                            Notes:
+                            - No-Cache Header
+                            - Datensparsamkeit eher umgekehrt bei empto
+                            - Zugriff wird nicht protokolliert (Access Logs) - BDSG/DSGVO verlangt das aber auch nicht
+                            - Vorhaltefrist wird nicht geprüft, Datenlöschung geht nur händisch
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Kommunikationssicherheit
                             
@@ -372,13 +372,13 @@
                             - Key-Pinning einsetzen gegen Man in the Middle (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Verbindungsfehler protokollieren (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
-                                - HPKP ist umstritten, weil kompliziert
-                                - Besser DANE oder TLS Server Identity Pinnig with Tickets über DNS
+                            Notes:
+                            - HPKP ist umstritten, weil kompliziert
+                            - Besser DANE oder TLS Server Identity Pinnig with Tickets über DNS
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### HTTP-Sicherheit
                             
@@ -389,37 +389,37 @@
                             - Framing der Anwendung von extern verbieten (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - Proxy/SSO Header prüfen (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
 
-                            :::Notes:::
-                                - CSP moderner als X-XSS, aber gleiches Ziel
-                                - Zeichensatz in Kopfzeile aufnehmen
-                                - Content-Sniffing kann Problem für Client sein
+                            Notes:
+                            - CSP moderner als X-XSS, aber gleiches Ziel
+                            - Zeichensatz in Kopfzeile aufnehmen
+                            - Content-Sniffing kann Problem für Client sein
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Schadcode
                             
                             - Ausreichende Isolierung um Ausbreitung zu verhindern/behindern (L3) <!-- .element: class="fragment" data-fragment-index="1" -->
                             - Keine Easter Eggs in Produktivsystemen (L3) <!-- .element: class="fragment" data-fragment-index="1" -->
 
-                            :::Notes:::
-                                - Docker, LoadBalancer zum Abschotten vom Internet
+                            Notes:
+                            - Docker, LoadBalancer zum Abschotten vom Internet
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Business Logic
                             
                             - Ausführung von Schritten nur in festgelegter Reihenfolge (L2) <!-- .element: class="fragment" data-fragment-index="1" -->
                             - Beschränkungen für Geschäfte (Umsatz, Häufigkeit etc.) (L2) <!-- .element: class="fragment" data-fragment-index="1" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Dateien und Ressourcen
 
@@ -429,11 +429,11 @@
                             - Kein Flash, ActiveX und Co verwenden (L1) <!-- .element: class="fragment" data-fragment-index="1" -->
                             - Dateiuploads außerhalb des Webroot speichern (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Webdienste und API
 
@@ -442,11 +442,11 @@
                              - Keine statischen API-Keys verwenden (L1) <!-- .element: class="fragment" data-fragment-index="1" -->
                              - Eingehenden Content-Type bei API-Aufruf prüfen (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### ASVS Audit
                             #### Konfiguration
                             
@@ -454,13 +454,13 @@
                             - Verschlüsselte Kommunikation zwischen Teilen der Anwendung (L2) <!-- .element: class="fragment" data-fragment-index="2" -->
                             - JS, CSS und Schriftarten vom eigenen Server ausliefern statt auf CDN zu vertrauen (L3) <!-- .element: class="fragment" data-fragment-index="3" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                 </section>
                 <section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Sicherheit durch Frameworks und Architektur
                             #### Frameworks
                             
@@ -470,31 +470,31 @@
                             - ReactJS JSX zwischenkompilat, standardmäßig escaped  <!-- .element: class="fragment" data-fragment-index="4" -->
                             - Redux und React Props für Datenaustausch statt direkter DOM Manipulation  <!-- .element: class="fragment" data-fragment-index="5" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Sicherheit durch Frameworks und Architektur
                             #### Architektur
                             
                             - Docker für Isolation <!-- .element: class="fragment" data-fragment-index="1" -->
                             - HTTPS und Loadbalancer für SEO und Sicherheit <!-- .element: class="fragment" data-fragment-index="2" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                 </section>
                 <section>
                     <section data-markdown>
-                        <textarea data-template data-separator-notes="^:::Notes:::">
+                        <textarea data-template data-separator-notes="^Notes:">
                             ## Wie hat empto abgeschnitten und wie gehts weiter?
                             ### (Zusammenfassung und Ausblick)
 
                         </textarea>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Zusammenfassung
                             
                             - Klassifizierung in Stufen funktioniert nicht <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -504,11 +504,11 @@
                             - Defizite vor allem bei Datenschutz und HTTP-Kopfzeilen <!-- .element: class="fragment" data-fragment-index="4" -->
                             - Übliche Probleme durch Frameworks und Architektur abgefangen <!-- .element: class="fragment" data-fragment-index="5" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                     <section data-markdown>
-                        <script type="text/template" data-separator-notes="^:::Notes:::">
+                        <script type="text/template" data-separator-notes="^Notes:">
                             ### Ausblick
                             
                             - ASVS v4 wird große Überarbeitung <!-- .element: class="fragment" data-fragment-index="1" -->
@@ -517,7 +517,7 @@
                             - Sicherheit bei Anwendungen in der Entwicklung <!-- .element: class="fragment" data-fragment-index="4" -->
                             - Automatisierung <!-- .element: class="fragment" data-fragment-index="5" -->
 
-                            :::Notes:::
+                            Notes:
                         </script>
                     </section>
                 </section>
